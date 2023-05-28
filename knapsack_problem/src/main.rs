@@ -108,7 +108,7 @@ fn trace_state_knapsack(pre: &Vec<Vec<usize>>, vgoods: &Vec<Goods>) ->
        println!("{}th goods in -> weight: {}, value: {}", p, 
                                 vgoods[p-1].weight, vgoods[p-1].val);
 
-        goods_num = p;
+        goods_num = p-1;
         cap_num -= vgoods[p-1].weight as usize;
     }
 
